@@ -50,17 +50,6 @@ This portfolio serves as my digital résumé, highlighting my education, technic
 
 ---
 
-## 🚀 Run Locally
-
-```bash
-git clone https://github.com/furqanzubair209/furqanzubair209.github.io.git
-
-cd furqanzubair209.github.io
-
-# Open index.html in your browser
-```
-
----
 
 ## 📬 Connect With Me
 
