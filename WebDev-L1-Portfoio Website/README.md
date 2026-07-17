@@ -43,7 +43,7 @@ This portfolio serves as my digital résumé, highlighting my education, technic
 ## 📜 Highlights
 
 - 🎓 BS Computer Science Student
-- 🚀 14+ Personal Projects
+- 🚀 32+ Personal Projects
 - 📜 17+ Professional Certifications
 - 🤖 AI & Machine Learning Enthusiast
 - 💼 Web Development & Programming
