@@ -53,7 +53,7 @@ This portfolio serves as my digital résumé, highlighting my education, technic
 
 ## 📬 Connect With Me
 
-- **GitHub:** https://github.com/furqanzubair209
+- **GitHub:** https://github.com/furqanzubair209-cell
 - **LinkedIn:** https://www.linkedin.com/in/muhammad-furqan-228807304/
 - **Email:** furqanzubair209@gmail.com
 
