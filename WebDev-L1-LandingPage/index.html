@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furqan Labs · Premium Digital Design & Web Engineering</title>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- main styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- navigation bar (sticky glass design) -->
+    <nav class="navbar">
+        <!-- toggle navigation using checkbox hack -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        
+        <div class="navbar-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shapes"></i>
+                </div>
+                Furqan<span>Labs</span>
+            </a>
+            
+            <!-- nav menu links -->
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="btn-primary btn-sm">Get Started</a></li>
+            </ul>
+            
+            <!-- mobile hamburger trigger -->
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        
+        <!-- mobile drawer menu -->
+        <div class="nav-drawer">
+            <a href="#features" class="drawer-link">Services</a>
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#testimonials" class="drawer-link">Reviews</a>
+            <a href="#pricing" class="drawer-link">Pricing</a>
+            <a href="#contact" class="btn-primary btn-block">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- hero section with intro and stats -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-wand-magic-sparkles"></i> 
+                        <span>Engineering Future Web Standards</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Crafting elite digital <span class="gradient-text">masterpieces</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Furqan Labs merges cutting-edge tech with ultra-premium design aesthetics. We build lightning-fast web architectures and futuristic interfaces that make your brand legendary.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Start a Project
+                        </a>
+                        <a href="#features" class="btn-secondary btn-large">
+                            <i class="fas fa-compass"></i>
+                            Explore Services
+                        </a>
+                    </div>
+                    
+                    <!-- brief statistics -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.8%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">6+ Yrs</span>
+                            <span class="stat-label">Industry Mastery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- interactive hero graphic (orb and floating tech cards) -->
+                <div class="hero-visual">
+                    <div class="hero-graphic">
+                        <!-- floating status badges -->
+                        <div class="floating-element el1">
+                            <i class="fas fa-bezier-curve"></i>
+                            <div class="float-details">
+                                <strong>UX Design</strong>
+                                <span>Pixel Perfect</span>
+                            </div>
+                        </div>
+                        <div class="floating-element el2">
+                            <i class="fas fa-bolt"></i>
+                            <div class="float-details">
+                                <strong>Performance</strong>
+                                <span>Lighthouse 100</span>
+                            </div>
+                        </div>
+                        <div class="floating-element el3">
+                            <i class="fas fa-shield-halved"></i>
+                            <div class="float-details">
+                                <strong>Security</strong>
+                                <span>Enterprise Grade</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-orb"></div>
+                        <div class="hero-grid"></div>
+                        
+                        <!-- central vector svg design -->
+                        <svg class="hero-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="svg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#7c3aed" />
+                                    <stop offset="50%" stop-color="#ff2a85" />
+                                    <stop offset="100%" stop-color="#00f5ff" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="38" stroke="url(#svg-grad)" stroke-width="0.7" fill="none" stroke-dasharray="5, 3" />
+                            <circle cx="50" cy="50" r="30" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" fill="none" />
+                            <path d="M 50,12 L 83,50 L 50,88 L 17,50 Z" stroke="url(#svg-grad)" stroke-width="1" fill="none" opacity="0.7" />
+                            <circle cx="50" cy="12" r="2.5" fill="#ff2a85" />
+                            <circle cx="83" cy="50" r="2.5" fill="#00f5ff" />
+                            <circle cx="50" cy="88" r="2.5" fill="#7c3aed" />
+                            <circle cx="17" cy="50" r="2.5" fill="#ff2a85" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-wave">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="#090b11"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- what we do / features grid -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Capabilities</span>
+                    <h2 class="section-title">
+                        Engineered for <span class="gradient-text">extraordinary</span> products
+                    </h2>
+                    <p class="section-subtitle">
+                        We don't do templates. We craft bespoke digital architectures designed to convert users and accelerate growth.
+                    </p>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- card: ui/ux design -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                        </div>
+                        <h3 class="feature-title">Bespoke UI/UX Design</h3>
+                        <p class="feature-desc">
+                            We architect high-fidelity, intuitive design systems tailored to your brand identity, ensuring deep user engagement.
+                        </p>
+                        <a href="#contact" class="feature-link">Initiate Project <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <!-- card: frontend dev -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <h3 class="feature-title">Frontend Engineering</h3>
+                        <p class="feature-desc">
+                            Pixel-perfect translation of design concepts into semantic, robust, and clean HTML5/CSS3.
+                        </p>
+                        <a href="#contact" class="feature-link">Initiate Project <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <!-- card: branding -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                        </div>
+                        <h3 class="feature-title">Brand Identity</h3>
+                        <p class="feature-desc">
+                            Establishing futuristic brand books, logo sets, marketing material, and absolute visual coherence.
+                        </p>
+                        <a href="#contact" class="feature-link">Initiate Project <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <!-- card: saas dashboards -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                        </div>
+                        <h3 class="feature-title">SaaS Architecture</h3>
+                        <p class="feature-desc">
+                            Designing and styling high-performance user dashboards, analytics modules, and SaaS user portals.
+                        </p>
+                        <a href="#contact" class="feature-link">Initiate Project <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <!-- card: optimization -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-gauge-high"></i>
+                            </div>
+                        </div>
+                        <h3 class="feature-title">Speed Optimization</h3>
+                        <p class="feature-desc">
+                            Fine-tuning rendering speeds, layout shifts, asset loading, and achieving 100/100 Lighthouse performance.
+                        </p>
+                        <a href="#contact" class="feature-link">Initiate Project <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <!-- card: seo strategy -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <h3 class="feature-title">SEO & Growth Strategy</h3>
+                        <p class="feature-desc">
+                            Structuring pages for maximum organic visibility, search rankings, schema data, and visual conversion pathways.
+                        </p>
+                        <a href="#contact" class="feature-link">Initiate Project <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section and our mission -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- about text info -->
+                    <div class="about-content">
+                        <div class="about-badge">
+                            <i class="fas fa-atom"></i>
+                            <span>The Core Philosophy</span>
+                        </div>
+                        <h2 class="about-title">Fueled by pixel perfection and <span class="gradient-text">technical mastery</span></h2>
+                        <p class="about-text">
+                            At Furqan Labs, we believe that web interfaces shouldn't just look stunning—they must operate at the speed of thought. We bridge the gap between creative visual architecture and efficient code layout.
+                        </p>
+                        <p class="about-text">
+                            We work with forward-thinking brands, founders, and enterprises to build premium digital assets. Every line of markup and CSS rule is written with precision, structure, and responsiveness in mind.
+                        </p>
+                        
+                        <div class="about-actions">
+                            <a href="#contact" class="btn-primary">
+                                <i class="fas fa-arrow-right"></i>
+                                Partner With Us
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- visual layout with highlight numbers -->
+                    <div class="about-visual">
+                        <div class="about-stats-grid">
+                            <div class="about-stat-card">
+                                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                                <span class="stat-num">50+</span>
+                                <span class="stat-lbl">Premium Clients</span>
+                            </div>
+                            <div class="about-stat-card">
+                                <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                                <span class="stat-num">100%</span>
+                                <span class="stat-lbl">On-Time Launch</span>
+                            </div>
+                            <div class="about-stat-card">
+                                <div class="stat-icon"><i class="fas fa-server"></i></div>
+                                <span class="stat-num">0ms</span>
+                                <span class="stat-lbl">Layout Overlaps</span>
+                            </div>
+                            <div class="about-stat-card">
+                                <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                                <span class="stat-num">100</span>
+                                <span class="stat-lbl">Lighthouse Score</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- client reviews & testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Endorsements</span>
+                    <h2 class="section-title">
+                        What elite <span class="gradient-text">leaders</span> say
+                    </h2>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <!-- client testimonial: alex -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "Furqan took our legacy platform and styled a futuristic landing page that blew our investors away. The absolute precision of the UI and the lack of junk scripts make it load instantly."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%237c3aed' opacity='0.2'/%3E%3Ctext x='30' y='38' font-family='Outfit' font-size='24' text-anchor='middle' fill='%23a78bfa'%3EAR%3C/text%3E%3C/svg%3E" alt="Alex Rivera" />
+                            </div>
+                            <div class="author-info">
+                                <strong class="author-name">Alex Rivera</strong>
+                                <span class="author-role">Founder, ApexCorp</span>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- client testimonial: sarah -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "The design sensibility at Furqan Labs is unmatched. They delivered a cohesive brand style guide and a blazing-fast static website that loads under 200ms globally."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23ff2a85' opacity='0.2'/%3E%3Ctext x='30' y='38' font-family='Outfit' font-size='24' text-anchor='middle' fill='%23f472b6'%3ESL%3C/text%3E%3C/svg%3E" alt="Sarah Lin" />
+                            </div>
+                            <div class="author-info">
+                                <strong class="author-name">Sarah Lin</strong>
+                                <span class="author-role">Design Director, VeloTech</span>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- client testimonial: marcus -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "No bloat, no layout shifts, just pure aesthetic brilliance. Furqan Labs represents the absolute gold standard for modern front-end web layouts."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%2300f5ff' opacity='0.2'/%3E%3Ctext x='30' y='38' font-family='Outfit' font-size='24' text-anchor='middle' fill='%2322d3ee'%3EMC%3C/text%3E%3C/svg%3E" alt="Marcus Cole" />
+                            </div>
+                            <div class="author-info">
+                                <strong class="author-name">Marcus Cole</strong>
+                                <span class="author-role">CTO, Zenith Global</span>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service pricing plans -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Investment</span>
+                    <h2 class="section-title">
+                        Transparent <span class="gradient-text">packaging</span>
+                    </h2>
+                </div>
+                
+                <div class="pricing-grid">
+                    <!-- pricing: launch package -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <h3 class="pricing-name">Launch</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">$999</span>
+                                <span class="price-period">/Project</span>
+                            </div>
+                            <p class="pricing-desc">Perfect for high-impact landing pages and portfolios.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-circle-check"></i> Bespoke Landing Page Design</li>
+                            <li><i class="fas fa-circle-check"></i> Responsive HTML5 & CSS3</li>
+                            <li><i class="fas fa-circle-check"></i> Basic SEO Optimization</li>
+                            <li><i class="fas fa-circle-check"></i> Interactive CSS Components</li>
+                            <li><i class="fas fa-circle-check"></i> 7-Day Turnaround</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary btn-block">Book Project</a>
+                    </div>
+                    
+                    <!-- pricing: elite package -->
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Requested</div>
+                        <div class="pricing-card-header">
+                            <h3 class="pricing-name">Elite</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">$2,499</span>
+                                <span class="price-period">/Project</span>
+                            </div>
+                            <p class="pricing-desc">For fast-growing startups needing advanced digital presence.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-circle-check"></i> Full Multi-Page Visual Setup</li>
+                            <li><i class="fas fa-circle-check"></i> Premium Custom Design System</li>
+                            <li><i class="fas fa-circle-check"></i> Advanced CSS Scroll Animations</li>
+                            <li><i class="fas fa-circle-check"></i> 100/100 Speed Optimization</li>
+                            <li><i class="fas fa-circle-check"></i> Technical SEO Architecture</li>
+                            <li><i class="fas fa-circle-check"></i> Priority Consultation</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary btn-block">Book Project</a>
+                    </div>
+                    
+                    <!-- pricing: retainer model -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <h3 class="pricing-name">Retainer</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">Custom</span>
+                                <span class="price-period">/Monthly</span>
+                            </div>
+                            <p class="pricing-desc">Ongoing elite support, updates, and brand expansions.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-circle-check"></i> Dedicated Visual Specialist</li>
+                            <li><i class="fas fa-circle-check"></i> Unlimited Minor Adjustments</li>
+                            <li><i class="fas fa-circle-check"></i> Weekly Performance Checks</li>
+                            <li><i class="fas fa-circle-check"></i> Continuous SEO Audit Reports</li>
+                            <li><i class="fas fa-circle-check"></i> Priority Slack/Email Access</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary btn-block">Inquire Retainer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section and newsletter -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <!-- branding info and social links -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon-small">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    Furqan<span>Labs</span>
+                </div>
+                <p class="footer-desc">
+                    Designing and engineering elite-level web experiences. No compromise on performance, design, or accessibility.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            
+            <!-- link list -->
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4 class="footer-links-title">Expertise</h4>
+                    <a href="#features">Design Systems</a>
+                    <a href="#features">Frontend Engineering</a>
+                    <a href="#features">Brand Strategy</a>
+                    <a href="#features">SaaS Interfaces</a>
+                </div>
+                <div class="footer-links-column">
+                    <h4 class="footer-links-title">Resources</h4>
+                    <a href="#about">Philosophy</a>
+                    <a href="#testimonials">Endorsements</a>
+                    <a href="#pricing">Packaging</a>
+                    <a href="#contact">Consultation</a>
+                </div>
+            </div>
+            
+            <!-- subscription form -->
+            <div class="footer-newsletter">
+                <h4 class="footer-links-title">Join the Laboratory</h4>
+                <p class="newsletter-desc">Subscribe to get design systems and code efficiency guides.</p>
+                <form class="newsletter-form" action="mailto:hello@furqanlabs.com" method="post" enctype="text/plain">
+                    <input type="email" placeholder="email@address.com" class="newsletter-input" required aria-label="Email address" />
+                    <button type="submit" class="btn-primary btn-sm" aria-label="Subscribe">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- footer bottom bar -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <span class="footer-copyright">
+                    &copy; 2026 Furqan Labs. All rights reserved.
+                </span>
+                <span class="footer-contact-email">
+                    <i class="far fa-envelope"></i> hello@furqanlabs.com
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
