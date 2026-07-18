@@ -28,7 +28,10 @@ This portfolio serves as my digital résumé, highlighting my education, technic
 - 📬 Contact form and social media links
 
 ---
+## Live Demo
 
+- furqanweb.netlify.app
+---
 ## 🛠️ Tech Stack
 
 - HTML5
