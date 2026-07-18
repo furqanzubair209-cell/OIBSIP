@@ -30,7 +30,7 @@ This portfolio serves as my digital résumé, highlighting my education, technic
 ---
 ## Live Demo
 
-- furqanweb.netlify.app
+https://furqanweb.netlify.app/
 ---
 ## 🛠️ Tech Stack
 
