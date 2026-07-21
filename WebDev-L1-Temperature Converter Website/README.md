@@ -34,7 +34,12 @@ This project was developed as **Task 3** for the **Oasis Infobyte Web Developmen
 - Keyboard shortcuts
 
 ---
-
+## GitHub Profile link:
+https://github.com/furqanzubair209-cell
+---
+## Live Demo
+https://furqantemperatureconverter.netlify.app/
+---
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
